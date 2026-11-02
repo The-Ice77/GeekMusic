@@ -113,3 +113,4 @@ Este documento descreve a estrutura visual e a disposição das seções da land
   - Ícones de redes sociais
   - Informações de direitos autorais
 - **Layout Flexbox:** Alinhamento e distribuição espaçada entre os blocos informativos.
+

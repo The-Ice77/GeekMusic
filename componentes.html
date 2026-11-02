@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Componentes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca de Componentes — GeekMusic</h1>
+        <p>Catálogo base com a documentação dos componentes reutilizáveis (Padrão BEM).</p>
+    </header>
+
+    <main>
+
+        <!-- =========================================================
+             PARTE 1: COMPONENTES SIMPLES (Mínimo de 5 exigidos)
+             Regra BEM:
+               - Bloco: .nome-do-bloco
+               - Modificador: .nome-do-bloco--variante
+        ========================================================= -->
+
+        <!-- 1. BOTÕES (.btn) -->
+        <section class="secao-guia">
+            <h2>1. Botões (.btn)</h2>
+            <p>Componente base para ações do usuário com variantes de estilo.</p>
+            <button class="btn btn--primary">Botão Primário</button>
+            <button class="btn btn--secondary">Botão Secundário</button>
+            <button class="btn btn--danger">Cancelar / Perigo</button>
+        </section>
+
+
+        <!-- 2. BADGES (.badge) -->
+        <section class="secao-guia">
+            <h2>2. Badges (.badge)</h2>
+            <p>Marcadores visuais usados em cards e destaques.</p>
+            <span class="badge badge--city">Cidade</span>
+            <span class="badge badge--danger">Perigo</span>
+            <span class="badge badge--success">Sucesso</span>
+            <span class="badge badge--ranking">Ranking</span>
+            <span class="badge badge--warning">Aviso</span>
+        </section>
+
+
+        <!-- 3. CAMPOS DE FORMULÁRIO (.form-group / .form-field) -->
+        <section class="secao-guia">
+            <h2>3. Campos de Formulário</h2>
+            <p>Estrutura de label e input para formulários.</p>
+            <div class="form-field">
+                <label class="form-field__label" for="exemplo"></label>
+                <input class="form-field__input" type="text" id="exemplo" placeholder="Digite seu nome">
+            </div>
+
+        </section>
+
+        <!-- 4. LINK DE NAVEGAÇÃO (.nav-link) -->
+        <section class="secao-guia">
+            <h2>4. Links de Navegação (.nav-link)</h2>
+            <p>Links estilizados com estados interativos (:hover / :focus).</p>
+            <a class="navbar__link" href="#">Início</a>
+            <a class="navbar__link" href="#">Músicas</a>
+            <a class="navbar__link" href="#">Autores</a>
+            <a class="navbar__link" href="#">Sobre</a>
+        </section>
+
+        <!-- 5. CARD BASE (.card) -->
+        <section class="secao-guia">
+            <h2>5. Card Base (.card)</h2>
+            <p>Container genérico para apresentação de informações com borda/sombra.</p>
+            <section class="card-container">
+                <div class="card">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <h3 class="card__title">Card</h3>
+                    <p class="card__description">Descrição</p>
+                    <button class="btn btn--primary card__button">Botão</button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <h3 class="card__title">Card</h3>
+                    <p class="card__description">Descrição</p>
+                    <button class="btn btn--primary card__button">Botão</button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <h3 class="card__title">Card</h3>
+                    <p class="card__description">Descrição</p>
+                    <button class="btn btn--primary card__button">Botão</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- 5. TÍTULO E SUBTÍTULO DAS SEÇÕES -->
+         <section class="secao-guia">
+         <div class="section-header">
+                <h2 class="section-title">Lançamentos Recentes</h2>
+                <p class="section-subtitle">Fique por dentro das novidades, novas faixas e produções frescas.</p>
+            </div>
+        </section>
+
+        <!-- 1. NAVBAR COMPOSTA (.navbar) -->
+        <section class="secao-guia">
+            <h2>1. Navbar Composta (.navbar)</h2>
+            <p>Combina logotipo, links de navegação e botão de ação.</p>
+
+            <!-- Estrutura da Navbar seguindo o Wireframe -->
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__brand">
+                        <img class="navbar__logo" src="imagens/logo.png" alt="Logo GeekMusic">
+                        <span class="navbar__title">GeekMusic</span>
+                    </div>
+
+                    <div class="navbar__links">
+                        <a class="navbar__link" href="#">Início</a>
+                        <a class="navbar__link" href="#">Músicas</a>
+                        <a class="navbar__link" href="#">Autores</a>
+                        <a class="navbar__link" href="#">Sobre</a>
+                    </div>
+
+                    <div class="navbar__actions">
+                        <a class="btn btn--primary" href="#">Entrar</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- 2. CABEÇALHO PRINCIPAL / HERO (.hero) -->
+        <section class="secao-guia">
+            <h2>2. Seção Hero (.hero)</h2>
+            <p>Componente composto que combina badge, título, texto introdutório, botões de ação e mídia em Flexbox.</p>
+
+            <section class="hero">
+                <div class="hero__content">
+                    <span class="badge badge--ranking">Comunidade Geek</span>
+                    <h1 class="hero__title">
+                        O universo da música geek em um só lugar
+                    </h1>
+                    <p class="hero__description">
+                        Dando visibilidade aos compositores, raps de animes e produções autorais de alta qualidade da nossa comunidade.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#">Participar</a>
+                        <a class="btn btn--secondary" href="#">Saber Mais</a>
+                    </div>
+                </div>
+
+                <div class="hero__media">
+                    <img class="hero__image" src="imagens/logo-cropped.png" alt="GeekMusic em destaque">
+                </div>
+            </section>
+        </section>
+
+
+        <!-- 2. CARD DE MÚSICAS MAIS OUVIDAS -->
+        <section class="secao-guia">
+            <h2>2. Card de Músicas Mais Ouvidas</h2>
+            <p>Combina imagem da capa, título, badge de ranking e botão de ação "Ouvir".</p>
+            <div class="card-container">
+                <div class="card card--music card--listen">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <span class="badge badge--ranking"></span>
+                    <h3 class="card__title">Música</h3>
+                    <p class="card__description">Descrição da música</p>
+                    <button class="btn btn--primary card__button">Ouvir</button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <span class="badge badge--ranking"></span>
+                    <h3 class="card__title">Música</h3>
+                    <p class="card__description">Descrição da música</p>
+                    <button class="btn btn--primary card__button">Ouvir</button>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <span class="badge badge--ranking"></span>
+                    <h3 class="card__title">Música</h3>
+                    <p class="card__description">Descrição da música</p>
+                    <button class="btn btn--primary card__button">Ouvir</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- 3. CARD DE MÚSICAS RECENTES -->
+        <section class="secao-guia">
+            <h2>3. Card de Músicas Recentes (Lançamentos)</h2>
+            <p>Combina imagem, título, descrição curta e botão "Saiba Mais".</p>
+            <section class="card-container">
+                <div class="card card--music card--recent">
+                    <img class="card__image" src="" alt="">
+                    <h3 class="card__title">Música</h3>
+                    <p class="card__description">Descrição da música</p>
+                    <button class="btn btn--primary card__button">Saiba Mais</button>
+                </div>
+                <div class="card card--music card--recent">
+                    <img class="card__image" src="" alt="">
+                    <h3 class="card__title">Música</h3>
+                    <p class="card__description">Descrição da música</p>
+                    <button class="btn btn--primary card__button">Saiba Mais</button>
+                </div>
+                <div class="card card--music card--recent">
+                    <img class="card__image" src="" alt="">
+                    <h3 class="card__title">Música</h3>
+                    <p class="card__description">Descrição da música</p>
+                    <button class="btn btn--primary card__button">Saiba Mais</button>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!-- 4. CARD DE AUTORES EM DESTAQUE -->
+        <section class="secao-guia">
+            <h2>4. Card de Autores em Destaque</h2>
+            <p>Combina foto do autor, nome, badges (ranking e cidade) e botão "Seguir".</p>
+            <div class="card-container">
+                <div class="card card--author">
+                    <img class="card__image card__image--author card--emphasis" src="imagens/logo.png" alt="GeekMusic">
+                    <span class="badge badge--ranking"></span>
+                    <span class="badge badge--city"></span>
+                    <h3 class="card__title">Música</h3>
+                    <button class="btn btn--primary card__button">Seguir</button>
+                    <button class="btn btn--primary card__button">Saiba Mais</button>
+                </div>
+                <div class="card card--author">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <span class="badge badge--ranking"></span>
+                    <span class="badge badge--city"></span>
+                    <h3 class="card__title">Música</h3>
+                    <button class="btn btn--primary card__button">Seguir</button>
+                    <button class="btn btn--primary card__button">Saiba Mais</button>
+                </div>
+                <div class="card card--author">
+                    <img class="card__image" src="imagens/logo.png" alt="GeekMusic">
+                    <span class="badge badge--ranking"></span>
+                    <span class="badge badge--city"></span>
+                    <h3 class="card__title">Música</h3>
+                    <button class="btn btn--primary card__button">Seguir</button>
+                    <button class="btn btn--primary card__button">Saiba Mais</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. FORMULÁRIO DE INSCRIÇÃO COMPOSTO -->
+        <section class="secao-guia">
+            <h2>5. Formulário de Inscrição (.registration-form)</h2>
+            <p>Combina múltiplos campos de formulário e botões de ação (Enviar / Cancelar).</p>
+
+            <form class="registration-form">
+                <div class="form-field">
+                    <label class="form-field__label" for="form-nome">Nome Completo</label>
+                    <input class="form-field__input" type="text" id="form-nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field__label" for="form-username">Nome de Usuário (Username)</label>
+                    <input class="form-field__input" type="text" id="form-username" placeholder="@seunomegeek" required>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field__label" for="form-email">E-mail</label>
+                    <input class="form-field__input" type="email" id="form-email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field__label" for="form-senha">Senha</label>
+                    <input class="form-field__input" type="password" id="form-senha" placeholder="Digite uma senha forte" required>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field__label" for="form-numero">Número de Celular</label>
+                    <input class="form-field__input" type="tel" id="form-numero" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="registration-form__actions">
+                    <button type="submit" class="btn btn--primary">Enviar</button>
+                    <button type="reset" class="btn btn--secondary">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+
+        <!-- 6. RODAPÉ COMPOSTO (.footer) -->
+        <section class="secao-guia">
+            <h2>6. Rodapé (.footer)</h2>
+            <p>Componente composto contendo marca/logo, links de navegação, redes sociais e direitos autorais.</p>
+
+            <footer class="footer">
+                <div class="footer__container">
+                    <!-- Marca e Descrição -->
+                    <div class="footer__brand">
+                        <img class="footer__logo" src="imagens/logo-white.png" alt="GeekMusic">
+                        <p class="footer__description">
+                            Divulgando e valorizando os talentos da música geek.
+                        </p>
+                    </div>
+                    <!-- Redes Sociais -->
+                    <div class="footer__social">
+                        <h4 class="footer__title">Comunidade</h4>
+                        <div class="footer__social-links">
+                            <a class="footer__link" href="#">Discord</a>
+                            <a class="footer__link" href="#">YouTube</a>
+                            <a class="footer__link" href="#">Instagram</a>
+                            <a class="footer__link" href="#">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="footer__bottom">
+                    <p class="footer__copyright">&copy; 2026 GeekMusic. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+</body>
+</html>

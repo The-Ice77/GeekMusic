@@ -1,0 +1,596 @@
+/* PALETA DE CORES & VARIÁVEIS GLOBAIS*/
+:root {
+    /* Escala de Tons Roxos */
+    --purple-100: #ede9fe; 
+    --purple-200: #ddd6fe; 
+    --purple-500: #8b5cf6; 
+    --purple-600: #7c3aed; 
+    --purple-700: #6d28d9; 
+    --purple-900: #2e1065; 
+
+    /* Cores de Ação / Tema */
+    --color-primary: var(--purple-600);
+    --color-primary-hover: var(--purple-700);
+    --color-primary-light: var(--purple-100);
+
+    --color-secondary: #a855f7;
+    --color-secondary-hover: #9333ea;
+
+    /* Neutros e Superfícies (com leve toque arroxeado moderno) */
+    --color-bg: #f8f7ff;          /* Fundo da página */
+    --color-surface: #ffffff;     /* Fundo de cards e containers */
+    --color-border: #e9d5ff;      /* Borda suave */
+    --color-text: #1e1b4b;        /* Texto principal escuro */
+    --color-text-muted: #6b7280;  /* Texto secundário / legendas */
+
+    /* Cores dos Badges */
+    --badge-city-bg: #cffafe;
+    --badge-city-color: #0e7490;
+    --badge-danger-bg: #fee2e2;
+    --badge-danger-color: #b91c1c;
+    --badge-success-bg: #d1fae5;
+    --badge-success-color: #047857;
+    --badge-ranking-bg: var(--purple-100);
+    --badge-ranking-color: var(--purple-700);
+    --badge-warning-bg: #fef3c7;
+    --badge-warning-color: #b45309;
+
+    /* Raios de borda (Border Radius) */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-pill: 9999px;
+}
+
+/*ESTILOS GLOBAIS & RESET BÁSICO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+}
+
+/* Centralização de conteúdo para telas maiores */
+header,
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Organização e respiro das seções da página principal */
+main section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--purple-200);
+}
+
+
+
+/* Cabeçalho padrão de cada seção */
+.section-header {
+    margin-bottom: 24px;
+}
+
+.section-header--center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--purple-900);
+    margin-bottom: 6px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: var(--color-text-muted);
+}
+
+/* Destaque centralizado para a seção de Cadastro */
+#Cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--purple-900);
+    margin-bottom: 8px;
+}
+
+header p {
+    color: var(--color-text-muted);
+}
+
+.secao-guia {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.secao-guia h2 {
+    color: var(--purple-900);
+    margin-bottom: 8px;
+}
+
+.secao-guia p {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+}
+
+/*COMPONENTES SIMPLES*/
+
+/* 1. BOTÕES (.btn) */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn--secondary {
+    background-color: var(--purple-100);
+    color: var(--purple-700);
+}
+
+.btn--secondary:hover {
+    background-color: var(--purple-200);
+}
+
+.btn--danger {
+    background-color: var(--badge-danger-color);
+    color: #ffffff;
+}
+
+.btn--danger:hover {
+    background-color: #991b1b;
+}
+
+
+/* 2. BADGES (.badge) */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge--city {
+    background-color: var(--badge-city-bg);
+    color: var(--badge-city-color);
+}
+
+.badge--danger {
+    background-color: var(--badge-danger-bg);
+    color: var(--badge-danger-color);
+}
+
+.badge--success {
+    background-color: var(--badge-success-bg);
+    color: var(--badge-success-color);
+}
+
+.badge--ranking {
+    background-color: var(--badge-ranking-bg);
+    color: var(--badge-ranking-color);
+}
+
+.badge--warning {
+    background-color: var(--badge-warning-bg);
+    color: var(--badge-warning-color);
+}
+
+
+/* 3. GRID E CAMPOS DE FORMULÁRIO (.form-field) */
+.registration-form {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-field__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--purple-900);
+}
+
+.form-field__input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: #ffffff;
+    color: var(--color-text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Estado interativo :focus (requisito obrigatório) */
+.form-field__input:focus {
+    border-color: var(--color-primary);
+    background-color: #faf5ff;
+}
+
+.form-field__input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* 4. LINKS DE NAVEGAÇÃO (.nav-link) */
+.nav-link {
+    display: inline-block;
+    color: var(--purple-700);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--purple-100);
+    color: var(--purple-900);
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* 5. CARD BASE (.card) */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 260px;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+/* Efeito interativo no card (:hover) */
+.card:hover {
+    border-color: var(--purple-500);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+.card__image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    background-color: var(--purple-100);
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--purple-900);
+}
+
+.card__description {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    flex-grow: 1;
+}
+
+.card__button {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/*PARTE 2: COMPONENTES COMPOSTOS*/
+
+/* 1. NAVBAR (.navbar) */
+.navbar {
+    width: 100%;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 0;
+}
+
+.navbar__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar__logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--purple-900);
+    letter-spacing: -0.5px;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar__link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar__link:hover {
+    color: var(--color-primary);
+    background-color: var(--purple-100);
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* 2. CABEÇALHO PRINCIPAL / HERO (.hero) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 32px 0;
+    flex-wrap: wrap;
+}
+
+.hero__content {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero__content .badge {
+    align-self: flex-start;
+}
+
+.hero__title {
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 800;
+    color: var(--purple-900);
+}
+
+.hero__description {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.hero__media {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--purple-200);
+}
+
+
+/* 3. CARDS ESPECÍFICOS */
+/* Card de Autor */
+.card--author {
+    text-align: center;
+    align-items: center;
+}
+
+.card--author .card__image {
+    width: 110px;
+    height: 110px;
+    border-radius: var(--radius-pill);
+    margin: 0 auto;
+    border: 3px solid var(--purple-200);
+}
+
+.card--author .card__button {
+    width: 100%;
+    margin-top: 6px;
+}
+
+/* Card de Música */
+.card--music {
+    position: relative;
+}
+
+.card--music .badge {
+    align-self: flex-start;
+}
+
+
+/* 3. FORMULÁRIO (.registration-form) */
+.registration-form {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form__actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+
+/* 4. RODAPÉ (.footer) */
+.footer {
+    width: 100%;
+    background-color: var(--purple-900);
+    color: #ffffff;
+    border-radius: 0;
+    padding: 48px 0 24px;
+    margin-top: 48px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto 28px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer__brand {
+    max-width: 280px;
+}
+
+.footer__logo {
+    height: 46px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.footer__description {
+    font-size: 14px;
+    color: var(--purple-200);
+    line-height: 1.5;
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__link {
+    color: var(--purple-200);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer__link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer__social-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer__bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px 0;
+    border-top: 1px solid rgba(221, 214, 254, 0.2);
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: 13px;
+    color: var(--purple-200);
+}
+
