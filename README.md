@@ -32,7 +32,7 @@ the-ice77-geekmusic/
 
 ---
 
-Principais Funcionalidades & Seções
+## Principais Funcionalidades & Seções
 
     Navbar Composta (.navbar): Menu de navegação responsivo com logotipo, links de ancoragem e botão de acesso rápido.
 
@@ -50,10 +50,13 @@ Principais Funcionalidades & Seções
 
 ---
 
-🛠️ Como Executar o Projeto
-    Clone o repositório para a sua máquina:
-    Bash
-    git clone [https://github.com/seu-usuario/the-ice77-geekmusic.git](https://github.com/seu-usuario/the-ice77-geekmusic.git)
-    Abra a pasta do projeto no seu editor de código preferido (ex: VS Code).
-    Abra o arquivo index.html diretamente no seu navegador ou utilize uma extensão como o Live Server para visualizar o site em tempo real.
-    Para visualizar a vitrine de componentes isolados, acesse o arquivo componentes.html.
+## 🛠️ Como Executar o Projeto
+    Clone o repositório para a sua máquina:
+
+    git clone [https://github.com/seu-usuario/the-ice77-geekmusic.git](https://github.com/seu-usuario/the-ice77-geekmusic.git)
+
+    Abra a pasta do projeto no seu editor de código preferido (ex: VS Code).
+
+    Abra o arquivo index.html diretamente no seu navegador ou utilize uma extensão como o Live Server para visualizar o site em tempo real.
+
+    Para visualizar a vitrine de componentes isolados, acesse o arquivo componentes.html.
