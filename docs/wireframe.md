@@ -4,7 +4,7 @@ Este documento descreve a estrutura visual e a disposição das seções da land
 
 ---
 
-## 📐 Estrutura Geral (Esquema Visual)
+## Estrutura Geral (Esquema Visual)
 
 ```text
 +-------------------------------------------------------------+
@@ -55,7 +55,7 @@ Este documento descreve a estrutura visual e a disposição das seções da land
 
 ---
 
-## 🧩 Detalhamento das Seções e Componentes
+## Detalhamento das Seções e Componentes
 
 ### 1. Barra de Navegação (Navbar)
 - **Tipo:** Componente Composto (`.navbar`)
