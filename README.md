@@ -30,31 +30,30 @@ the-ice77-geekmusic/
     ├── diario-de-bordo.md  # Registro de evolução e decisões do projeto
     └── wireframe.md        # Especificações de layout e estrutura visual
 
+---
+
 Principais Funcionalidades & Seções
 
-    Navbar Composta (.navbar): Menu de navegação responsivo com logotipo, links de ancoragem e botão de acesso rápido.
+    Navbar Composta (.navbar): Menu de navegação responsivo com logotipo, links de ancoragem e botão de acesso rápido.
 
-    Seção "Hero" (.hero): Destaque principal da página com itens chamativos, badges informativos e elementos visuais em Flexbox.
+    Seção "Hero" (.hero): Destaque principal da página com itens chamativos, badges informativos e elementos visuais em Flexbox.
 
-    Músicas Mais Ouvidas (.card--listen): Cards ranqueados exibindo as faixas de maior destaque.
+    Músicas Mais Ouvidas (.card--listen): Cards ranqueados exibindo as faixas de maior destaque.
 
-    Lançamentos Recentes (.card--recent): Vitrine de novidades musicais com descrições e botões de direcionamento.
+    Lançamentos Recentes (.card--recent): Vitrine de novidades musicais com descrições e botões de direcionamento.
 
-    Autores em Destaque (.card--author): Perfis de artistas parceiros com tags de localização e ranking.
+    Autores em Destaque (.card--author): Perfis de artistas parceiros com tags de localização e ranking.
 
-    Formulário de Inscrição (.registration-form): Cadastro interativo para novos membros e criadores.
+    Formulário de Inscrição (.registration-form): Cadastro interativo para novos membros e criadores.
 
-    Rodapé (.footer): Links para redes sociais da comunidade (Discord, YouTube, Instagram, Spotify) e créditos.
+    Rodapé (.footer): Links para redes sociais da comunidade (Discord, YouTube, Instagram, Spotify) e créditos.
+
+---
 
 🛠️ Como Executar o Projeto
-
     Clone o repositório para a sua máquina:
     Bash
-
     git clone [https://github.com/seu-usuario/the-ice77-geekmusic.git](https://github.com/seu-usuario/the-ice77-geekmusic.git)
-
     Abra a pasta do projeto no seu editor de código preferido (ex: VS Code).
-
     Abra o arquivo index.html diretamente no seu navegador ou utilize uma extensão como o Live Server para visualizar o site em tempo real.
-
     Para visualizar a vitrine de componentes isolados, acesse o arquivo componentes.html.
