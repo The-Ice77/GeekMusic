@@ -540,7 +540,7 @@ header p {
 .footer__logo {
     height: 46px;
     width: auto;
-    
+    object-fit: contain;
     margin-bottom: 12px;
 }
 
