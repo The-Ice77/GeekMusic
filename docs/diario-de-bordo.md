@@ -18,13 +18,13 @@
 | :---: | :--- | :--- | :--- | :--- |
 | **10/10** | Todos os integrantes | Detalhamento inicial do projeto (`Planejamento de Projeto.pdf`). Definição de tema, público-alvo, seções da página, componentes simples e compostos. | Consulta sobre boas práticas de organização de requisitos para landing pages musicais. | Escolhemos focar na comunidade de rap geek e anime, estruturando 7 seções principais e os componentes BEM necessários. |
 | **13/10** | Todos os integrantes | Criação das estruturas padrões em HTML. Esboço das marcações da página principal (`index.html`) e catálogo (`componentes.html`). | Pedimos sugestões de estrutura semântica para cards e navegação. | Adotamos tags semânticas (`<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) e preparamos os containers. |
-| **17/10** | Todos os integrantes | Discussão da identidade visual, definição da paleta de cores (foco em tons roxos) e especificações do wireframe (`docs/wireframe.md`). | Consulta sobre contraste e harmonização de paleta roxa/synthwave com fundo claro. | Optamos por manter o modo claro com tons roxos (`#7c3aed`, `#2e1065`, `#f8f7ff`) e cantos arredondados, evitando estética escura genérica. |
-| **20/10** | Todos os integrantes | Início da implementação do CSS (`css/style.css`), reset básico e configuração de variáveis globais (`:root`). | Apoio na estruturação inicial de variáveis CSS e sintaxe da metodologia BEM. | O grupo definiu as variáveis de cores e espaçamentos, iniciando a codificação dos componentes simples. |
+| **17/10** | Todos os integrantes | Discussão da identidade visual, definição da paleta de cores (foco em tons roxos) e especificações do wireframe (`docs/wireframe.md`). | Consulta sobre contraste e harmonização de paleta roxa com fundo claro. | Optamos por manter o modo claro com tons roxos (`#7c3aed`, `#2e1065`, `#f8f7ff`) e cantos arredondados, evitando estética escura genérica. |
+| **20/10** | Todos os integrantes | Início da implementação do CSS (`css/style.css`), valores padrões e configuração de variáveis globais (`:root`). | Apoio na estruturação inicial de variáveis CSS e sintaxe da metodologia BEM. | O grupo definiu as variáveis de cores e espaçamentos, iniciando a codificação dos componentes simples. |
 | **24/10** | Todos os integrantes | Conclusão da base do CSS: estilização com Flexbox dos componentes compostos (Navbar, Formulário de Inscrição e Rodapé). | Dúvidas pontuais sobre alinhamento com `justify-content` e `flex-wrap`. | Ajustamos a Navbar e o Rodapé para ocuparem 100% da largura da tela, com conteúdo interno centralizado em container. |
-| **27/10** | Todos os integrantes | Curadoria e seleção de cantores, músicas geek reais e refinamento dos cards e badges. | Sugestões de distribuição de badges de ranking e localização para os perfis. | Escolhemos artistas conhecidos da cena nacional (Tauz, 7 Minutoz, VMZ) para tornar a página viva, realista e autoral. |
+| **27/10** | Todos os integrantes | Curadoria e seleção de cantores, músicas geek reais e refinamento dos cards e badges. | Nenhum. | Escolhemos artistas conhecidos da cena nacional (Tauz, 7 Minutoz, VMZ) para tornar a página viva, realista e autoral. |
 | **31/10** | Todos os integrantes | Criação do repositório oficial no GitHub (`Initial commit`) e preparação da unificação dos arquivos. | Nenhum. | Centralizamos o código trabalhado separadamente durante o mês no repositório final. |
 | **01/11** | Todos os integrantes | Organização das pastas, subida dos PDFs de planejamento e documentação do wireframe no repositório. | Formatação do wireframe em representação textual/markdown. | Mantivemos a árvore de diretórios rigorosamente alinhada com as recomendações da disciplina (`css/`, `docs/`, `imagens/`). |
-| **02/11** | Todos os integrantes | Mutirão de refinamento: ajuste das logos recortadas, humanização dos efeitos de clique (`:active`), unificação dos arquivos, README e diário de bordo. | Revisão de código, ajuste de referências de variáveis no CSS e estruturação da documentação. | O grupo refinou manualmente os estilos, retirou animações artificiais de IA para deixar o CSS limpo e finalizou a entrega. |
+| **02/11** | Todos os integrantes | Mutirão de refinamento: ajuste das logos recortadas, unificação dos arquivos, README e diário de bordo atualizados. | Revisão de código, ajuste de referências de variáveis no CSS e estruturação da documentação. | O grupo refinou manualmente os estilos e finalizou a entrega. |
 
 ---
 
@@ -32,19 +32,13 @@
 
 1. **Ferramentas utilizadas:** Assistentes de inteligência artificial generativa (Google Antigravity / Gemini).
 2. **Perguntas e solicitações feitas:**
-   * Sugestões de estrutura inicial de pastas e boas práticas para catálogo de componentes BEM.
-   * Ajuda na sintaxe de propriedades de alinhamento com Flexbox.
+   * Ajuda na aplicação da metodologia BEM em CSS.
+   * Ajuda na aplicação de propriedades de alinhamento com Flexbox.
    * Sugestão de escala cromática em variáveis CSS (`:root`) baseada na cor roxa.
-   * Análise crítica do código para identificar excessos e manter o estilo autoral e humano.
 3. **Respostas aproveitadas:**
    * O molde da estrutura de arquivos (`index.html`, `componentes.html`, `style.css`, `docs/`).
    * A padronização da nomenclatura BEM (`.card__title`, `.btn--primary`, `.navbar__container`).
-   * O recorte e otimização das logos para transparência.
-4. **Alterações feitas pelo grupo:**
-   * O grupo removeu animações exageradas e efeitos de foco artificiais (como anéis complexos de sombra nos inputs e saltos de escala nos botões).
-   * O grupo escolheu e refinou a paleta de cores para modo claro, ajustando a tipografia para Verdana.
-   * Os integrantes escreveram e adaptaram os textos e a seleção musical para que representassem a cena geek real.
-5. **Decisão final adotada:**
+4. **Decisão final adotada:**
    * O uso de IA atuou estritamente como suporte técnico e consultivo de aprendizagem. Toda a decisão estética, organização de layout e autoria do projeto reflete as escolhas conscientes dos integrantes do grupo.
 
 ---
